@@ -1,0 +1,21 @@
+{
+  "name": "twilio-studio-trigger-ui",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "configure": "configure-env",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run",
+    "deploy": "twilio-run deploy"
+  },
+  "devDependencies": {
+    "configure-env": "^1.0.0",
+    "twilio-run": "^2.0.0"
+  },
+  "dependencies": {
+    "twilio": "3.52.0"
+  },
+  "engines": {
+    "node": "10.17.0"
+  }
+}

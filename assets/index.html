@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.4.2/sha.js"
+      integrity="sha512-aNuJL9dGmxptdarUqHqErH4MhgsJR0exQrlTRvCWWfZVwtB8El4iHpr6v+1ftov/7RAczXGCTDQQteAEaOzj6w=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Studio Flows</title>
+  </head>
+  <body></body>
+  <div class="ui inverted vertical masthead center aligned segment mb1">
+    <div class="ui text container">
+      <h1 class="ui inverted header">Twilio Studio Flow Trigger</h1>
+    </div>
+  </div>
+  <div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+      <div class="ui form loading">
+        <div class="ui floating dropdown labeled search icon button mb1">
+          <i class="share icon"></i>
+          <span id="flows-menu-placeholder" class="text"
+            >Fetching Studio Flows...</span
+          >
+          <div class="menu" id="flows-menu"></div>
+        </div>
+        <div class="field required">
+          <label>From</label>
+          <input type="text" name="from" placeholder="From Number" />
+        </div>
+        <div class="field required">
+          <label>To</label>
+          <input
+            type="text"
+            name="to"
+            placeholder="To Number"
+          />
+        </div>
+        <div class="field">
+          <label>Parameters</label>
+          <textarea name="parameters"></textarea>
+        </div>
+        <button
+          class="ui button right floated red"
+          onclick="executeFlow()"
+          type="submit"
+        >
+          Trigger
+        </button>
+      </div>
+    </div>
+    <div class="four wide column"></div>
+  </div>
+
+  <script src="scripts/studio.js"></script>
+</html>
