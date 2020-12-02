@@ -2,6 +2,8 @@
 
 This repo provide you with an interface to trigger Studio Flows in your Twilio account.
 
+![image](https://user-images.githubusercontent.com/54728384/100862515-2a514600-348b-11eb-9870-918dda87cb2c.png)
+
 # Install
 
 - Clone the repo
@@ -38,6 +40,8 @@ Copy the full address of the `index.html`
 # Usage
 
 In your browser open the address copied in the previous step. You should see a page loading your Studio flow. Please note that only Studio Flows that can be triggered via API are shown in the dropdown list:
+
+![image](https://user-images.githubusercontent.com/54728384/100862684-5ec50200-348b-11eb-836a-9012f1f0ce2d.png)
 
 Select the flow from the list, add the To and From number. Optinally you can specify some parameters. This needs to be a valid JSON object, e.g.
 
